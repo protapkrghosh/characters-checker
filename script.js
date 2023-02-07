@@ -4,10 +4,14 @@ function mindGame(number) {
     const sumNumber = multiplyNumber + 10;
     const divided = sumNumber / 2;
     const subNumber = divided - 5;
-
-    return subNumber;
+    if(sumNumber > 0) {
+        return subNumber;
+    }
+    else {
+        return "Please, input a positive number"
+    }
 }
-const inputNumber = 15;
+const inputNumber = 33;
 const output = mindGame(inputNumber);
 console.log(output);
 
@@ -29,7 +33,7 @@ function evenOdd(inputString) {
     }
 
 }
-let value = "phero";
+let value = "phero ";
 let outputValue = evenOdd(value);
 console.log(outputValue);
 
@@ -67,36 +71,7 @@ console.log(differenceValue);
 
 
 // check positive and negative numbers in the function
-/* function findingBadData(datas) {
-    if(datas.length >= 0) {
-        const goodData = datas.length;
-        return goodData;
-    }
-    else if(datas.length <= 0) {
-        const badData = datas.length;
-        return badData;
-    }
-    else {
-        console.log("Try agin, Please input a array value")
-    }
-}
-const datas = [-12, 34, -6, 678, -89];
-const outputArray = findingBadData(datas);
-console.log(outputArray);
-*/
 
-
-
-
-/* var arrayNumbers = [23, 34, 45, 56, 67, 39, 78, 98];
-for(var i = 0; i < 7; i++) {
-    valueNumber = arrayNumbers[i];
-    if(valueNumber > 50) {
-        continue;
-    }
-    console.log(valueNumber);
-} 
-*/
 
 
 
