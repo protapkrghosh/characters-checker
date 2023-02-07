@@ -12,9 +12,10 @@ function mindGame(number) {
         return "Please, input a positive number"
     }
 }
-const inputNumber = 33;
+const inputNumber = 5;
 const output = mindGame(inputNumber);
 console.log(output);
+
 
 
 
@@ -37,7 +38,6 @@ function evenOdd(inputString) {
 let value = "phero";
 let outputValue = evenOdd(value);
 console.log(outputValue);
-
 
 
 
@@ -66,8 +66,6 @@ console.log(differenceValue);
 
 
 
-
-
 // Problem 4
 // check positive and negative numbers in the function
 function findingBadData(peopleAge) {
@@ -79,7 +77,7 @@ function findingBadData(peopleAge) {
     }
     return badDataCount;
 }
-let peopleAge = [-6, 25, 45, -9, -20, -45, -565];
+let peopleAge = [2, -5, -7, -13];
 let negativeNumber = findingBadData(peopleAge);
 console.log(negativeNumber);
 
@@ -105,7 +103,5 @@ function gemsToDiamond(firstFriGems, secondFriGems, thirdFriGems) {
         return "Please, input all variable number value"
     }
 }
-
 const inputDiamond = gemsToDiamond(20, 200, 50);
 console.log(inputDiamond);
-
