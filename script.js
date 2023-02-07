@@ -33,7 +33,7 @@ function evenOdd(inputString) {
     }
 
 }
-let value = "phero ";
+let value = "phero";
 let outputValue = evenOdd(value);
 console.log(outputValue);
 
@@ -58,7 +58,7 @@ function isLGSeven(numberValue) {
         return "Please, input number value"
     }
 }
-const visual = -15;
+const visual = 6;
 const differenceValue = isLGSeven(visual);
 console.log(differenceValue);
 
@@ -73,6 +73,32 @@ console.log(differenceValue);
 // check positive and negative numbers in the function
 
 
+
+
+
+// Convert gems into diamond
+function gemsToDiamond(firstFriGems, secondFriGems, thirdFriGems) {
+    const gemsPower1 = firstFriGems * 21;
+    const gemsPower2 = secondFriGems * 32;
+    const gemsPower3 = thirdFriGems * 43;
+
+    const totalGemsPowers = gemsPower1 + gemsPower2 + gemsPower3;
+    if(totalGemsPowers < 1000*2) {
+        return totalGemsPowers;
+    }
+    else if(totalGemsPowers >= 1000*2) {
+        const largeGemsPower = totalGemsPowers - 2000;
+        return largeGemsPower;
+    }
+    else {
+        return "Please, input all variable number value"
+    }
+}
+const friendsGems1 = 20;
+const friendsGems2 = 200;
+const friendsGems3 = 50;
+const inputDiamond = gemsToDiamond(friendsGems1, friendsGems2, friendsGems3);
+console.log(inputDiamond);
 
 
 
