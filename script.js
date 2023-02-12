@@ -21,7 +21,7 @@ console.log(output);
 
 // Problem 2
 // Count the total number of characters in the String
-function evenOdd(inputString) {
+/* function evenOdd(inputString) {
     let countNumber = inputString.length;
     if(countNumber % 2 == 0) {
         return "even";
@@ -35,6 +35,25 @@ function evenOdd(inputString) {
 
 }
 let value = "phero";
+let outputValue = evenOdd(value);
+console.log(outputValue); */
+
+
+// Right solution Problem 2
+function evenOdd(inputString) {
+    let countNumber = inputString.length;
+    if(countNumber % 2 == 0 && typeof inputString == "string") {
+        return "even";
+    }
+    else if(countNumber % 2 !== 0 && typeof inputString == "string") {
+        return "odd";
+    }
+    else {
+        return "Please, input a string value";
+    }
+
+}
+let value = false;
 let outputValue = evenOdd(value);
 console.log(outputValue);
 
@@ -108,4 +127,3 @@ function gemsToDiamond(firstFriGems, secondFriGems, thirdFriGems) {
 
 const inputDiamond = gemsToDiamond(20, 200, 50);
 console.log(inputDiamond);
-
